@@ -58,9 +58,11 @@ conda activate MeshAnythingV2
 pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 pip install -r training_requirements.txt # in case you want to train
-pip install flash-attn --no-build-isolation
+# pip install flash-attn --no-build-isolation
+pip install flash_attn==2.7.3 --no-build-isolation
 pip install -U gradio
 ```
+please check this [issue](https://github.com/Dao-AILab/flash-attention/issues/945#issuecomment-2943250395) if you are using cuda11.8
 
 ## Usage
 
